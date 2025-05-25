@@ -20,3 +20,5 @@ services:
         value: moodlea
       - key: MOODLE_DATABASE_PASSWORD
         value: JFFIVnQJvZzvaZVJgcWhHZJfvBndJbpd
+      - key: PORT
+        value: 8080
