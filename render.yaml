@@ -17,6 +17,6 @@ services:
       - key: MOODLE_DATABASE_USER
         value: postgres
       - key: MOODLE_DATABASE_NAME
-        value: railway
+        value: moodlea
       - key: MOODLE_DATABASE_PASSWORD
         value: JFFIVnQJvZzvaZVJgcWhHZJfvBndJbpd
