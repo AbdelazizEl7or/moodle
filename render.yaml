@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: moodle
+    env: docker
+    plan: free
+    repo: https://github.com/YOUR_USERNAME/YOUR_REPO_NAME
+    branch: main
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: MOODLE_DATABASE_TYPE
+        value: pgsql
+      - key: MOODLE_DATABASE_HOST
+        value: turntable.proxy.rlwy.net
+      - key: MOODLE_DATABASE_PORT_NUMBER
+        value: 11670
+      - key: MOODLE_DATABASE_USER
+        value: postgres
+      - key: MOODLE_DATABASE_NAME
+        value: railway
+      - key: MOODLE_DATABASE_PASSWORD
+        value: JFFIVnQJvZzvaZVJgcWhHZJfvBndJbpd
