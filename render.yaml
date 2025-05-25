@@ -6,19 +6,6 @@ services:
     repo: https://github.com/AbdelazizEl7or/moodle
     branch: main
     dockerfilePath: ./Dockerfile
-    healthCheckPath: /
     envVars:
-      - key: MOODLE_DATABASE_TYPE
-        value: pgsql
-      - key: MOODLE_DATABASE_HOST
-        value: turntable.proxy.rlwy.net
-      - key: MOODLE_DATABASE_PORT_NUMBER
-        value: 11670
-      - key: MOODLE_DATABASE_USER
-        value: postgres
-      - key: MOODLE_DATABASE_NAME
-        value: moodlea
-      - key: MOODLE_DATABASE_PASSWORD
-        value: JFFIVnQJvZzvaZVJgcWhHZJfvBndJbpd
       - key: PORT
         value: 8080
